@@ -4,10 +4,10 @@ const { userService} = require("../services");
 const createUser = async (req, res) => {
   try {
     const reqBody = req.body;
- const userExists = await  userService.createUser(reqBody)
-    if (userExists) {
-      throw new Error("User already created ");
-    }
+//  const userExists = await  userService.createUser(reqBody)
+//     if (userExists) {
+//       throw new Error("User already created ");
+//     }
 
     const user = await userService.createUser(reqBody);
     if (!user) {
