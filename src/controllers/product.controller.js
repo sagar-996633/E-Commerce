@@ -170,5 +170,5 @@ module.exports = {
   getProductList,
   updateProduct,
   manageProductStatus,
-  deleteProduct,
+  deleteProduct
 };
